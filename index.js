@@ -1,7 +1,7 @@
 'use strict';
 
 function getDogImage(num) {
-  const url = "https://dog.ceo/api/breeds/image/random/3 " + num;
+  const url = "https://dog.ceo/api/breeds/image/random/" + num;
   console.log(url);
   fetch(url)
     .then(response => response.json())
